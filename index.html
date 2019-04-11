@@ -1,0 +1,68 @@
+<html>
+	<body>
+		<header>
+			<ul>
+				<li class="first">Item 1</li>
+				<li class="selected">Item 2</li>
+				<li class="last">Item 3</li>
+			</ul>
+		</header>
+		<div class="col">
+			<section>
+				<h2>Section 1</h2>
+			</section>
+			<section class="current">
+				<h2 class="highlight">Section 2</h2>
+			</section>
+			<section>
+				<h1>Section 2</h1>
+			</section>
+        </div>
+        <script>
+            const header = document.querySelector('header')
+            const all = document.querySelectorAll('section')
+            const current = document.getElementsByClassName('current')
+            const afterCurrent = curent.nextElementSibling
+            const firstH2 = current.previousElement
+            const div = firstH2.parentElement 
+            const allH2 = querySelector('h2')
+        </script>
+	</body>
+</html>
+<body>
+		<h2>Shopping List</h2>
+		<ul id="list">
+			<li>Ramen</li>
+			<li>Coffee</li>
+			<li>Poptarts</li>
+			<li>Twinkies</li>
+		</ul>
+
+        <script>
+            const coffee = querySelector
+            //sets variable containing List query
+var shopList = document.querySelector('#list');
+//Changes Coffee item name to Fair Trade Coffee
+shopList.children[1].innerHTML = 'Fair trade coffee';
+//Remove List Item
+shopList.children[3].remove();
+//Add new List Item
+const newLI = document.createElement('li');
+newLI.innerHTML = "Cheese Whiz";
+const newListItem = document.querySelector('#list');
+newListItem.appendChild(newLI);
+// shopList.children[0].remove();
+// shopList.children[1].remove();
+var x = ['protein powder', 'muscle milk', 'power bars']
+shopList.innerHTML = " "
+for(i=0;i<x.length;i++){
+    var y = x[i]
+    var z = document.createElement('li');
+    z.innerHTML = y
+    newListItem.appendChild(z);
+}
+console.log(x);
+        </script>
+	</body>
+</html> 
+
